@@ -2,42 +2,43 @@
 
 ## Overview
 
-We would like to deploy a small restful Python based HTTP API as a Proof of Concept, and would like our engineers to be able to run this on their local deveopment machines using Docker Compose.  The API interacts with AWS DynamoDB, and is able to insert items into a DynamoDB table and retrieve them back again.  Items (or objects) in the API are identified by a UUID, a version 4 UUID to be specific.
+We would like to deploy a small restful Python based HTTP API as a Proof of Concept, and would like our engineers to be able to run this API on their local deveopment machines using Docker Compose.  The API interacts with AWS DynamoDB, and is able to insert items into a DynamoDB table and retrieve them back again.  Items (or objects) in the API are identified by a UUID, a version 4 UUID to be specific.
 
-In order to run locally, we wish to use the downloadable version of DynamoDB Local.  We have provided a small Terraform module which can be used to deploy the DynamoDB table.  There is also no requirement to persist the DynamoDB table
-
-The Python API script is `main.py`, and it requires a number of dependencies to be installed which are listed in `requirements.txt`
+In order to run locally, we wish to use the downloadable version of DynamoDB Local.  We have also provided a small Terraform module which can be used to deploy the DynamoDB table.  There is no requirement to persist the DynamoDB table to disk.
 
 
 ## Instructions
 
-You are required create the Docker Compose stack that engineers will run on their local development machines, along with a few other missing items:
+You are required to create the Docker Compose stack that engineers will run on their local development machines, along with a few other missing items:
 
 
-1. Create the Dockerfile for the Python HTTP API
-2. Create the `docker-compose.yml` file for the complete stack
-3. The API should be accessible directly from the host OS
-4. Use the supplied terraform module to deploy DynamoDB Local
+1. Create the Dockerfile for the Python HTTP API.
+2. Create the `docker-compose.yml` file for the complete stack.
+3. The HTTP API should be accessible directly from the host OS.
+4. Use the supplied terraform module to deploy DynamoDB Local.
 
-
-You require the following information to create the Dockerfile for the HTTP API:
+You will require the following information to create the Dockerfile and Docker Compose stack:
 
 - The API script itself, `main.py`.
-- The required dependencies listed in `requirements.txt`
+- The required dependencies are listed in `requirements.txt`
 - The command to run the docker container:  `uvicorn main:app --host "0.0.0.0" --port "8080"`
 - The API requires the following environment variables configured:
-    - DDB_ENDPOINT_URL
-    - DDB_TABLE_NAME
+    - DDB_ENDPOINT_URL (The DynamoDB Local endpoint)
+    - DDB_TABLE_NAME (The name of the DynamoDB Local table)
     - AWS_REGION
     - AWS_ACCESS_KEY_ID
     - AWS_SECRET_ACCESS_KEY
 
 
-## Api Usage
+Create a git repo containing your solution and push it to Github. We'll provide you with a few specific github `@user` handles to share it with the team you're working with.
 
-To interact with the API, and to ensure it is working as intended, you can issue the following commands against it.
+We will clone your repo and deploy your solution ourselves, adding and retrieving items from the API in order to test it.
 
-NB:  Objects in the are identified by Version 4 UUID's, which you will need to generate yourself
+## API Usage
+
+To interact with the API and ensure it is working as intended, you can issue the following commands against it.
+
+> Note that objects in the API are identified by Version 4 UUID's, which you will need to generate yourself.
 
 
 ### Add an object into the API
@@ -72,6 +73,8 @@ NB:  Objects in the are identified by Version 4 UUID's, which you will need to g
 
 ```
 ~ curl -X DELETE <api-endpoint>:8080/objects
+
+{"msg": "Objects deleted"}
 ```
 
 > Tip:  JQ is useful to format the output:
@@ -121,8 +124,3 @@ provider "aws" {
   }
 }
 ```
-
-
-## Bonus Points (to be completed)
-
-- Logging
