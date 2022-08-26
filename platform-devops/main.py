@@ -22,13 +22,12 @@ class Settings(BaseSettings):
     ddb_endpoint_url: str = Field(..., env="DDB_ENDPOINT_URL")
     aws_region: str = Field(..., env="AWS_REGION")
     ddb_table_name: str = Field(..., env="DDB_TABLE_NAME")
+    ddb_hash_key_name: str = Field(..., env="DDB_HASH_KEY_NAME")
 
 
 class DDB:
-    def __init__(self):
+    def __init__(self, settings):
         """AWS DynamoDB Resource Wrapper"""
-
-        settings = Settings()
 
         self.resource = boto3.resource(
             "dynamodb",
@@ -36,6 +35,7 @@ class DDB:
             region_name=settings.aws_region,
         )
         self.table = self.resource.Table(settings.ddb_table_name)
+        self.hash_key_name = settings.ddb_hash_key_name
 
     def is_active(self):
         """Given a table name, determine if the table is in an ACTIVE state"""
@@ -53,7 +53,9 @@ class DDB:
     def get_item(self, id):
         """Get a single item from the DynamoDB table"""
 
-        resp = self.table.get_item(Key={"uuid": str(id)}, ConsistentRead=True)
+        resp = self.table.get_item(
+            Key={self.hash_key_name: str(id)}, ConsistentRead=True
+        )
 
         if resp["ResponseMetadata"]["HTTPStatusCode"] != 200:
             return None
@@ -65,7 +67,7 @@ class DDB:
         """Put a single item to the DynamoDB table"""
 
         resp = self.table.put_item(
-            Item={"uuid": str(id), "ts": datetime.now().isoformat()}
+            Item={self.hash_key_name: str(id), "ts": datetime.now().isoformat()}
         )
 
         if resp["ResponseMetadata"]["HTTPStatusCode"] != 200:
@@ -89,14 +91,16 @@ class DDB:
     def delete_item(self, item):
         """Delete an item from DynamoDB Table"""
 
-        resp = self.table.delete_item(Key={"uuid": item})
+        resp = self.table.delete_item(Key={self.hash_key_name: item})
 
         return resp
 
 
 app = FastAPI()
 
-table = DDB()
+settings = Settings()
+
+table = DDB(settings)
 
 
 @app.on_event("startup")
@@ -154,6 +158,6 @@ async def delete_objects():
     resp = table.scan()
 
     for item in resp:
-        table.delete_item(item["uuid"])
+        table.delete_item(item[settings.ddb_hash_key_name])
 
     return {"msg": "Objects deleted"}

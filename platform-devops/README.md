@@ -25,6 +25,7 @@ You will require the following information to create the Dockerfile and Docker C
 - The API requires the following environment variables configured:
     - DDB_ENDPOINT_URL (The DynamoDB Local endpoint)
     - DDB_TABLE_NAME (The name of the DynamoDB Local table)
+    - DDB_HASH_KEY_NAME (The name of the DynamoDB Local hash key)
     - AWS_REGION
     - AWS_ACCESS_KEY_ID
     - AWS_SECRET_ACCESS_KEY
