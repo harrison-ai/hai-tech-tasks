@@ -98,7 +98,7 @@ We won't prescribe the API specification or expected response structure. We woul
 
 ### Bonus 
 
-There will be some brownie points if you can write a short blurb on how you would scale your solution to:
+There will be some brownie points if you can write a short blurb in your README.md on how you would scale your solution to:
 
 a) Cater for images with more than 2 cats and dogs of all combinations of all breeds of pets we have seen in this dataset.
 b) If you were to scale your service to meet the 8K requests per second rate of user load.
