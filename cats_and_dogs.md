@@ -80,10 +80,10 @@ The masks are packaged as single-channel grayscale images. Each pixel contains t
 3. Pixel with values (0, 254] indicates uncertainty whether a pet is present on not. For example, a mask value of 127 would present 50% confidence in the pixel being pet. Likewise, the mask value of 204 would represent 80% confidence in the pixel being pet. 
 
 The following sample shows an image of a `basset_hound` dog and the corresponding mask for the dog.
-![images](images/hiring/basset_hound.jpg)
+![images](resources/basset_hound.jpg)
 
 Another example featuring `Ragdoll` and `basset_hound` is shown below:
-![images](images/hiring/Ragdoll_basser.jpg)
+![images](resources/Ragdoll_basser.jpg)
 
 
 ## Task
