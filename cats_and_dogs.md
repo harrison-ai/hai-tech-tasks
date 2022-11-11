@@ -1,6 +1,10 @@
 ![https://xkcd.com/1558/](https://imgs.xkcd.com/comics/vet.png)
 
+<<<<<<< HEAD
 # Cats and dogs
+=======
+# Find me pets
+>>>>>>> b0d4e69 (Adding MLE Coding test of cats and dogs)
 
 Thank you for taking out time to do this coding challenge. We appreciate it's a significant investment of your time. We respect your time and equally commit to carefully reviewing your solution and bringing it up for debate in your follow-up interview. We have taken a considerable amount of time to design this test to give you a flavour of some of the challenges we have faced in our early days journey. To reduce the complexity and expectation of being versed in medical imaging, we have curated a dataset that simulates some interesting but related challenges in everyday images. 
 
@@ -98,7 +102,11 @@ We won't prescribe the API specification or expected response structure. We woul
 
 ### Bonus 
 
+<<<<<<< HEAD
 There will be some brownie points if you can write a short blurb in your README.md on how you would scale your solution to:
+=======
+There will be some brownie points if you can write a short blurb on how you would scale your solution to:
+>>>>>>> b0d4e69 (Adding MLE Coding test of cats and dogs)
 
 a) Cater for images with more than 2 cats and dogs of all combinations of all breeds of pets we have seen in this dataset.
 b) If you were to scale your service to meet the 8K requests per second rate of user load.
@@ -114,7 +122,6 @@ While we are not expecting you to deliver a production-ready model or solution, 
 2. We would like to see your software engineering best practices but we certainly don't expect you to deliver zero bug solutions. How you prioritise issues and opportunities in your solution will be of keen interest to us. 
 Please do not hesitate to call out, if you are aware of things you would like to do if there were infinite hours in a day.
 3. Please provide your solution such that we can run it in our environments/machines independently. 
-
 
 ## Disclaimer & Credits
 We thank the University of Oxford for their contributions in making [Oxford Pets dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) open source and sharing with the community. This toy problem is derived from the original Oxford Pets dataset but is heavily curated and synthesized to focus on a specific problem statement.
