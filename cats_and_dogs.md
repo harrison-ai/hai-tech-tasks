@@ -116,11 +116,5 @@ Please do not hesitate to call out, if you are aware of things you would like to
 3. Please provide your solution such that we can run it in our environments/machines independently. 
 
 
-## Confidentiality 
-
-We kindly ask that you do not share this dataset or your solution in the public domain and maintain confidentiality to provide fairness to our candidates in the evaluation process. 
-
-
-
 ## Disclaimer & Credits
 We thank the University of Oxford for their contributions in making [Oxford Pets dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) open source and sharing with the community. This toy problem is derived from the original Oxford Pets dataset but is heavily curated and synthesized to focus on a specific problem statement.
