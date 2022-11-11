@@ -1,10 +1,6 @@
 ![https://xkcd.com/1558/](https://imgs.xkcd.com/comics/vet.png)
 
-<<<<<<< HEAD
 # Cats and dogs
-=======
-# Find me pets
->>>>>>> b0d4e69 (Adding MLE Coding test of cats and dogs)
 
 Thank you for taking out time to do this coding challenge. We appreciate it's a significant investment of your time. We respect your time and equally commit to carefully reviewing your solution and bringing it up for debate in your follow-up interview. We have taken a considerable amount of time to design this test to give you a flavour of some of the challenges we have faced in our early days journey. To reduce the complexity and expectation of being versed in medical imaging, we have curated a dataset that simulates some interesting but related challenges in everyday images. 
 
@@ -102,11 +98,7 @@ We won't prescribe the API specification or expected response structure. We woul
 
 ### Bonus 
 
-<<<<<<< HEAD
 There will be some brownie points if you can write a short blurb in your README.md on how you would scale your solution to:
-=======
-There will be some brownie points if you can write a short blurb on how you would scale your solution to:
->>>>>>> b0d4e69 (Adding MLE Coding test of cats and dogs)
 
 a) Cater for images with more than 2 cats and dogs of all combinations of all breeds of pets we have seen in this dataset.
 b) If you were to scale your service to meet the 8K requests per second rate of user load.
