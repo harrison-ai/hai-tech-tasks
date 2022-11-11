@@ -1,6 +1,6 @@
 ![https://xkcd.com/1558/](https://imgs.xkcd.com/comics/vet.png)
 
-# Find me pets
+# Cats and dogs
 
 Thank you for taking out time to do this coding challenge. We appreciate it's a significant investment of your time. We respect your time and equally commit to carefully reviewing your solution and bringing it up for debate in your follow-up interview. We have taken a considerable amount of time to design this test to give you a flavour of some of the challenges we have faced in our early days journey. To reduce the complexity and expectation of being versed in medical imaging, we have curated a dataset that simulates some interesting but related challenges in everyday images. 
 
