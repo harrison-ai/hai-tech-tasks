@@ -11,8 +11,7 @@ Are you a dog or cat person? Please accept our apologies in advance, If your ans
 
 You are provided with a dataset of Pets more specifically cats and dogs. The dataset contains 9087 images featuring cats and dogs in various poses, backgrounds and situations. In total this dataset features 7349 unique pets. 
 
-Use this link [https://harrison-ai-coding-challenge.s3.ap-southeast-2.amazonaws.com/HAI_Toy_Dataset.zip](https://harrison-ai-coding-challenge.s3.ap-southeast-2.amazonaws.com/HAI_Toy_Dataset.zip) to download the dataset. 
-
+The dataset is made available as a release artifact on this Github repo, see: [cats_and_dogs.zip](https://github.com/harrison-ai/hai-tech-tasks/releases/download/v0.1/cats_and_dogs.zip) (~1GB).
 
 Each sample would feature at least 1 pet and at most 2 pets. Wherever 2 pets are present, they will feature 1 cat and 1 dog. There should be no sample that features 2 cats or 2 dogs but only 1 cat and 1 dog. 
 
