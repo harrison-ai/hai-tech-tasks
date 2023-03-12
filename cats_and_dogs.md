@@ -9,7 +9,7 @@ Are you a dog or cat person? Please accept our apologies in advance if your answ
 
 ## Dataset
 
-You are provided with a dataset of pets, more specifically cats and dogs. The dataset contains 9087 images featuring cats and dogs in various poses, backgrounds and situations. In total this dataset features 7349 unique pets. 
+You are provided with a dataset of pets, more specifically cats and dogs. The dataset contains 9,087 images featuring cats and dogs in various poses, backgrounds and situations. In total this dataset features 7,349 unique pets. 
 
 The dataset is made available as a release artifact on this Github repo, see: [cats_and_dogs.zip](https://github.com/harrison-ai/hai-tech-tasks/releases/download/v0.1/cats_and_dogs.zip) (~1GB).
 
@@ -64,7 +64,7 @@ staffordshire_bull_terrier
 wheaten_terrier
 yorkshire_terrier
 ```
-3. **Pet_ID**: Pet ID pertains to the identity of each unique pet. In total we have 7349 unique pets being featured in this dataset. 
+3. **Pet_ID**: Pet ID pertains to the identity of each unique pet. In total we have 7,349 unique pets being featured in this dataset. 
 
 
 ### Image 
