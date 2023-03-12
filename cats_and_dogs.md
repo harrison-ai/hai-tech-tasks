@@ -76,7 +76,7 @@ Each image is 3 channel RGB JPG file.
 The masks are packaged as single-channel grayscale images. Each pixel contains the scaled and discretized confidence of a pixel belonging to a pet (cat or dog).
 1. A pixel with value 0 indicates no pet is present (100% negative)
 2. A pixel with value of 255 indicates a pet is present (100% positive)
-3. A pixel with a value in-between 1-254 indicates uncertainty in whether a pet is present on not. For example, a mask value of 127 would present 50% confidence in the pixel being pet. Likewise, the mask value of 204 would represent 80% confidence in the pixel being a pet. 
+3. A pixel with a value in-between 1 and 254 indicates uncertainty. For example, a mask value of 127 would present 50% confidence in the pixel being pet; and a value of 204 would represent 80% confidence in the pixel being a pet. 
 
 The following sample shows an image of a `basset_hound` dog and the corresponding mask for the dog.
 ![images](resources/basset_hound.jpg)
