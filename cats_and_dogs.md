@@ -87,31 +87,32 @@ Another example featuring `Ragdoll` and `basset_hound` is shown below:
 
 ## Task
 
-Your task is to build a service that exposes an API to return three properties of the images:
+Your task is to build a model that returns three properties of an input image:
 
 1. What animals are present in the image? A cat or a dog or both.
 2. Identify the breeds of the animals present in the image.
 3. Provide a binary mask presenting which pixel features a pet (cat or dog) and which does not.
 
-We won't prescribe the API specification or expected response structure. We would like to see your approach to designing this API. 
+We won't prescribe the output specification or expected response structure – we would like to see your approach.
 
 ### Bonus 
 
 There will be some brownie points if you can write a short blurb in your README.md on how you would scale your solution to:
 
-a) Cater for images with more than 2 cats and dogs of all combinations of all breeds of pets we have seen in this dataset.
-b) Scale your service to meet ~8,000 requests per second.
+a. Expose an REST API and integrate your predictive model into a backend.
+b. Cater for images with more than 2 cats and dogs of all combinations of all breeds of pets we have seen in this dataset.
+c. Scale your service to meet ~8,000 requests per second.
 
-Both the above questions are optional and you can choose to answer neither, one, or both questions. 
+The above questions are optional and you can choose to answer all, some, or none of the questions. 
 
 ## Expectations 
 
 We would like to see your solution and notes associated with your decision-making process. As an ML Engineering team, we believe in delivering reliable, robust and quality solutions. Our focus covers delivering the best models packaged in a way that is easily deployable and usable. 
 
 While we are not expecting you to deliver a production-ready model or solution, we would like to see the approach and thought process akin to a production solution building. To be more explicit:
+
 1. We don't want you to build the best-performing model to break some hypothetical leaderboard. We just want to see your approach to breaking down this problem, and how you choose the configuration (data, parameters, hypermeters, layout and algorithms) of the model. If your code runs and can do 1 epoch at least then it's acceptable. If you love cats/dogs and want to spend more time then you are welcome to, however we respect your time and a workable solution is acceptable. 
-2. We would like to see your software engineering best practices but we certainly don't expect you to deliver zero bug solutions. How you prioritise issues and opportunities in your solution will be of keen interest to us. 
-Please do not hesitate to call out, if you are aware of things you would like to do if there were infinite hours in a day.
+2. We would like to see your software engineering best practices but we certainly don't expect you to deliver zero bug solutions. How you prioritise issues and opportunities in your solution will be of keen interest to us.  Please do not hesitate to call out, if you are aware of things you would like to do if there were infinite hours in a day.
 3. Please provide your solution such that we can run it in our environments/machines independently. 
 
 
