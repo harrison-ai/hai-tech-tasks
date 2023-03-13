@@ -99,7 +99,7 @@ We won't prescribe the output specification or expected response structure – w
 
 There will be some brownie points if you can write a short blurb in your README.md on how you would scale your solution to:
 
-a. Expose an REST API and integrate your predictive model into a backend.
+a. Expose a REST API and integrate your predictive model into a backend system.
 b. Cater for images with more than 2 cats and dogs of all combinations of all breeds of pets we have seen in this dataset.
 c. Scale your service to meet ~8,000 requests per second.
 
