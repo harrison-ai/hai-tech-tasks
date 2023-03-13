@@ -19,7 +19,7 @@ You are provided with a) a CSV file featuring metadata about the dataset, b) ima
 
 ### Metadata
 This CSV features details about the samples. 
-1. **Sample_ID**: Contains the unique ID for each sample. Using this ID you can locate the image and mask corresponding to the sample. For example, if Sample_ID is `95837f29-53d8-5761-8744-95e93e611efe` then the image and mask for this is located `<base_dataset_directory>/95837f29-53d8-5761-8744-95e93e611efe/image.jpg` and `<base_dataset_directory>/95837f29-53d8-5761-8744-95e93e611efe/mask.jpg` respectively. 
+1. **Sample_ID**: Contains the unique ID for each sample. Using this ID you can locate the image and mask corresponding to the sample. For example, if Sample_ID is `95837f29-53d8-5761-8744-95e93e611efe` then the image and mask for this is located at `<base_dataset_directory>/95837f29-53d8-5761-8744-95e93e611efe/image.jpg` and `<base_dataset_directory>/95837f29-53d8-5761-8744-95e93e611efe/mask.jpg` respectively. 
 2. **Breed**: There are 37 breeds of cats and dogs in this dataset.
 12 of these breeds are cats:
 ```
