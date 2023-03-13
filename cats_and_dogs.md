@@ -2,7 +2,7 @@
 
 # Cats and dogs
 
-Thank you for agreeing to do this coding challenge. We respect your time and equally commit to carefully reviewing your solution and bringing it up for debate in your follow-up interview. We have designed this test to give you a flavour of some of the challenges we have faced in our day-to-day. To reduce the complexity and expectation of being versed in medical imaging, we have curated a dataset that simulates some interesting but related challenges in everyday images. 
+Thank you for agreeing to do this coding challenge. We respect your time and equally commit to carefully reviewing your solution and bringing it up for debate in your follow-up interview. We have designed this task to give you a flavour of some of the challenges we have faced in our day-to-day. To reduce the complexity and expectation of being versed in medical imaging, we have curated a dataset that simulates some interesting but related challenges in everyday images. 
 
 Are you a dog or cat person? Please accept our apologies in advance if your answer is a stern neither.
 
