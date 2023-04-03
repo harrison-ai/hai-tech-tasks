@@ -111,7 +111,7 @@ We would like to see your solution and notes associated with your decision-makin
 
 While we are not expecting you to deliver a production-ready model or solution, we would like to see the approach and thought process akin to a production solution building. To be more explicit:
 
-1. We don't want you to build the best-performing model to break some hypothetical leaderboard. We just want to see your approach to breaking down this problem, and how you choose the configuration (data, parameters, hypermeters, layout and algorithms) of the model. If your code runs and can do 1 epoch at least then it's acceptable. If you love cats/dogs and want to spend more time then you are welcome to, however we respect your time and a workable solution is acceptable. 
+1. We don't want you to build the best-performing model to break some hypothetical leaderboard. We just want to see your approach to breaking down this problem, and how you choose the configuration (data, parameters, hyperparameters, layout and algorithms) of the model. If your code runs and can do 1 epoch at least then it's acceptable. If you love cats/dogs and want to spend more time then you are welcome to, however we respect your time and a workable solution is acceptable. 
 2. We would like to see your software engineering best practices but we certainly don't expect you to deliver zero bug solutions. How you prioritise issues and opportunities in your solution will be of keen interest to us.  Please do not hesitate to call out, if you are aware of things you would like to do if there were infinite hours in a day.
 3. Please provide your solution such that we can run it in our environments/machines independently. 
 
