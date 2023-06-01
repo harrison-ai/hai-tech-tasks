@@ -8,9 +8,6 @@ down:
 tf-shell:
 	docker compose run --rm --entrypoint='' terraform /bin/ash
 
-tools-shell:
-	docker compose run --rm tools bash
-
 exec-server:
 	docker exec -it $(shell docker ps -f label=ai.harrison.container.name=k3s-server -q) /bin/ash
 
